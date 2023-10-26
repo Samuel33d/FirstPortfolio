@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.linkActive {
+    border-bottom: 2px solid rgb(168, 85, 247);
+
+}
+
+
+.linkActiveMobile {
+    color: aqua;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin {
+    animation: spin 3s linear infinite;
+}
+
+/*Scroll principal*/
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+    background-color: rgba(0, 0, 0, .87);
+}
+
+body::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-button:increment,
+body::-webkit-scrollbar-button {
+    display: none;
+}
+
+body::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(168, 85, 247);
+    background: linear-gradient(0deg, rgba(168, 85, 247, 1) 0%, rgba(59, 130, 246, 1) 100%);
+
+    border-radius: 20px;
+    border: 2px solid #191919;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+
+/*Scroll textarea*/
+.textarea::-webkit-scrollbar {
+    -webkit-appearance: none;
+    background-color: rgba(0, 0, 0, .87);
+}
+
+.textarea::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+.textarea::-webkit-scrollbar-button:increment,
+.textarea::-webkit-scrollbar-button {
+    display: none;
+}
+
+.textarea::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+    background: rgb(168, 85, 247);
+    background: linear-gradient(0deg, rgba(168, 85, 247, 1) 0%, rgba(59, 130, 246, 1) 100%);
+
+    border-radius: 20px;
+    border: 2px solid #191919;
+}
+
+.textarea::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
