@@ -15,13 +15,15 @@ const TechStack = () => {
           Tecnologías con las que he trabajado
         </span>
 
-        <section className="grid grid-cols-2 sm:grid-cols-3 sm:gap-5 mt-10 transition-all place-items-center ">
+        <section className="grid grid-cols-2 sm:grid-cols-4 sm:gap-5 transition-all place-items-center gap-2 my-16">
           <TechUnit image={"/TechStack/html.png"} />
           <TechUnit image={"/TechStack/css.png"} />
           <TechUnit image={"/TechStack/js.png"} />
           <TechUnit image={"/TechStack/react.png"} />
           <TechUnit image={"/TechStack/tailwind.png"} />
           <TechUnit image={"/TechStack/vscode.png"} />
+          <TechUnit image={"/TechStack/npm.png"} />
+          <TechUnit image={"/TechStack/git.png"} />
         </section>
       </div>
     </section>
