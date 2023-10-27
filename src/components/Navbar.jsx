@@ -26,7 +26,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         </h2>
       </div>
 
-      <div className=" flex sm:hidden fixed left-1/2 -translate-x-1/2 p-5 gap-5 bottom-4 bg-gradient-to-r from-blue-500  to-red-500   dark:from-black/80 dark:to-black/80  backdrop-blur-sm rounded-full z-50 transition-all">
+      <div className=" flex sm:hidden fixed left-1/2 -translate-x-1/2 p-5 gap-5 bottom-4  bg-black/80 text-white  backdrop-blur-sm rounded-full z-50 transition-all">
         <Link
           to="home"
           offset={-100}
