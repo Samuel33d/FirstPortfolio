@@ -12,7 +12,7 @@ function App() {
   return (
     <main
       className={` ${
-        isDarkMode ? "dark bg-[#191919] text-white" : ""
+        isDarkMode && "dark bg-[#191919] text-white"
       } min-h-screen  px-2 overflow-hidden transition-all`}
     >
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />

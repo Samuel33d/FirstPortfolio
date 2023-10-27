@@ -3,7 +3,7 @@ const TechUnit = ({ image }) => {
     <img
       data-aos="zoom-in"
       data-aos-once="true"
-      className="hover:animate-pulse transition-all max-h-[112px] max-w-[112px]"
+      className=" max-h-[112px] max-w-[112px]"
       src={image}
       alt=""
     />
