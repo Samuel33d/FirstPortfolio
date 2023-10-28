@@ -3,10 +3,14 @@ import Swal from "sweetalert2";
 
 const ContactForm = () => {
   const handleSubmit = (e) => {
+    const formData = new FormData(e.target);
+
+    const data = Object.fromEntries(formData);
+
     e.preventDefault();
 
     emailjs
-      .sendForm("service_7rc7rgm", "template_1", e.target, "bYXFKzcNawuqmcPK1")
+      .send("service_7rc7rgm", "template_1", data, "bYXFKzcNawuqmcPK1")
       .then(
         (result) => {
           console.log(result.text);
@@ -42,7 +46,7 @@ const ContactForm = () => {
       <label className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500  to-purple-500 font-bold  ">
         Nombre:
         <input
-          className="font-medium text-gray-300 text-sm bg-transparent outline-none border-b border-b-black dark:border-b-white  py-1"
+          className="font-medium text-black dark:text-gray-300 text-sm bg-transparent outline-none border-b border-b-black dark:border-b-white  py-1"
           type="text"
           name="user_name"
         />
@@ -50,7 +54,7 @@ const ContactForm = () => {
       <label className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 font-bold   ">
         Email:
         <input
-          className="font-medium text-gray-300 text-sm bg-transparent outline-none border-b border-b-black dark:border-b-white  py-1"
+          className="font-medium text-black dark:text-gray-300 text-sm bg-transparent outline-none border-b border-b-black dark:border-b-white  py-1"
           type="email"
           name="user_email"
         />
@@ -60,7 +64,7 @@ const ContactForm = () => {
           Mensaje:
         </span>
         <textarea
-          className="textarea font-medium text-gray-300 text-sm bg-transparent outline-none border-b border-b-black dark:border-b-white  py-1"
+          className="textarea font-medium text-black dark:text-gray-300 text-sm bg-transparent outline-none border-b border-b-black dark:border-b-white  py-1"
           name="message"
         />
       </label>
