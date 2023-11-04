@@ -1,73 +1,65 @@
-[{
-    "name":"Front-End Store",
-    "projectImg":"/ProjectsImg/proyecto1.png",
-    "description":"Proyecto de una tienda especializada en la venta de ropa con estampados de distintas tecnologías para FrontEnd.",
-    "stack":"HTML , CSS.",
+[
+  {
+    "name": "Gift Music App",
+    "projectImg": "/ProjectsImg/proyecto13.jpeg",
+    "description": "Aplicación Web que nos permite eliminar, actualizar y crear playlists con nuestras canciones de preferencia para regalar.",
+    "stack": "HTML , CSS, ReactJS, Tailwind",
+    "siteLink": "https://giftmusicsb.vercel.app/#/",
+    "githubLink": "https://github.com/Samuel33d/Gift-Music-App"
+  },
+  {
+    "name": "Front-End Store",
+    "projectImg": "/ProjectsImg/proyecto1.png",
+    "description": "Proyecto de una tienda especializada en la venta de ropa con estampados de distintas tecnologías para FrontEnd.",
+    "stack": "HTML , CSS.",
     "siteLink": "https://eloquent-booth-963b45.netlify.app/"
-},
-{
-    "name":"Blog de Café",
-    "projectImg":"/ProjectsImg/proyecto2.png",
-    "description":"Proyecto sobre un blog en el cual se habla de café, y se venden algunos servicios.",
-    "stack":"HTML , CSS.",
-    "siteLink": "https://frosty-kilby-6d48fa.netlify.app/"
-},
-{
-    "name":"Pokedex App",
-    "projectImg":"/ProjectsImg/proyecto5.png",
-    "description":"Aplicación sobre pokemon, en el cual se puede ver información sobre los distintos tipos de pokemon, así como buscar por tipos y nombres.",
-    "stack":"HTML , CSS, ReactJS, Tailwind.",
+  },
+  {
+    "name": "Pokedex App",
+    "projectImg": "/ProjectsImg/proyecto5.png",
+    "description": "Aplicación sobre pokemon, en el cual se puede ver información sobre los distintos tipos de pokemon, así como buscar por tipos y nombres.",
+    "stack": "HTML , CSS, ReactJS, Tailwind.",
     "siteLink": "https://pokemonappsb.netlify.app/",
-    "githubLink":"https://github.com/Samuel33d/pokemonapp"
-
-},
-{
-    "name":"Huddle",
-    "projectImg":"/ProjectsImg/proyecto7.png",
-    "description":"Layout sencillo para la práctica de tecnologías como FlexBox y Grid.",
-    "stack":"HTML , CSS.",
-    "siteLink": "https://elegant-phoenix-c337ae.netlify.app/",
-    "githubLink":"https://github.com/Samuel33d/FrontEndMentor5"
-
-},
-{
-    "name":"Academlo Store",
-    "projectImg":"/ProjectsImg/proyecto8.png",
-    "description":"Proyecto de una tienda especializada en la comercialización de prendas superiores, como hoddies, sweaters, entre otros, para Academlo.",
-    "stack":"HTML , CSS, JavaScript",
+    "githubLink": "https://github.com/Samuel33d/pokemonapp"
+  },
+  {
+    "name": "Academlo Store",
+    "projectImg": "/ProjectsImg/proyecto8.png",
+    "description": "Proyecto de una tienda especializada en la comercialización de prendas superiores, como hoddies, sweaters, entre otros, para Academlo.",
+    "stack": "HTML , CSS, JavaScript",
     "siteLink": "https://academlostoresb.netlify.app/",
-    "githubLink":"https://github.com/Samuel33d/EcommerceAcademlo"
-},
-{
-    "name":"Weather App",
-    "projectImg":"/ProjectsImg/proyecto9.png",
-    "description":"Aplicación para conocer el clima en cualquier parte del mundo , así como también nos da el pronóstico en la ubicación actual.",
-    "stack":"HTML , CSS, ReactJS.",
+    "githubLink": "https://github.com/Samuel33d/EcommerceAcademlo"
+  },
+  {
+    "name": "Weather App",
+    "projectImg": "/ProjectsImg/proyecto9.png",
+    "description": "Aplicación para conocer el clima en cualquier parte del mundo , así como también nos da el pronóstico en la ubicación actual.",
+    "stack": "HTML , CSS, ReactJS.",
     "siteLink": "https://weatherappsbacademlo.netlify.app/",
-    "githubLink":"https://github.com/Samuel33d/WeatherApp"
-},
-{
-    "name":"InfoGalax",
-    "projectImg":"/ProjectsImg/proyecto10.png",
-    "description":"Aplicación web que nos trae citas aleatorias sobre curiosidades del espacio exterior.",
-    "stack":"HTML , CSS, ReactJS.",
+    "githubLink": "https://github.com/Samuel33d/WeatherApp"
+  },
+  {
+    "name": "InfoGalax",
+    "projectImg": "/ProjectsImg/proyecto10.png",
+    "description": "Aplicación web que nos trae citas aleatorias sobre curiosidades del espacio exterior.",
+    "stack": "HTML , CSS, ReactJS.",
     "siteLink": "https://infogalaxsb.netlify.app/",
-    "githubLink":"https://github.com/Samuel33d/InfoGalax"
-},
-{
-    "name":"CRUD de usuarios",
-    "projectImg":"/ProjectsImg/proyecto11.png",
-    "description":"Aplicación de un sistema CRUD para obtener, crear, actualizar y eliminar usuarios.",
-    "stack":"HTML , CSS, ReactJS.",
+    "githubLink": "https://github.com/Samuel33d/InfoGalax"
+  },
+  {
+    "name": "CRUD de usuarios",
+    "projectImg": "/ProjectsImg/proyecto11.png",
+    "description": "Aplicación de un sistema CRUD para obtener, crear, actualizar y eliminar usuarios.",
+    "stack": "HTML , CSS, ReactJS.",
     "siteLink": "https://userscrudsb.netlify.app/",
-    "githubLink":"https://github.com/Samuel33d/Users-CRUD"
-},
-{
-    "name":"Rick & Morty App",
-    "projectImg":"/ProjectsImg/proyecto12.png",
-    "description":"Aplicación sobre Rick & Mory, en el cual puedes ver información sobre las locaciones de la serie y cada uno de sus residentes.",
-    "stack":"HTML , CSS, ReactJS, Tailwind",
+    "githubLink": "https://github.com/Samuel33d/Users-CRUD"
+  },
+  {
+    "name": "Rick & Morty App",
+    "projectImg": "/ProjectsImg/proyecto12.png",
+    "description": "Aplicación sobre Rick & Mory, en el cual puedes ver información sobre las locaciones de la serie y cada uno de sus residentes.",
+    "stack": "HTML , CSS, ReactJS, Tailwind",
     "siteLink": "https://rickandmortyappsbacademlo.netlify.app/",
-    "githubLink":"https://github.com/Samuel33d/RickAndMortyApp"
-}
+    "githubLink": "https://github.com/Samuel33d/RickAndMortyApp"
+  }
 ]

@@ -11,6 +11,8 @@ import {
 import { Link } from "react-scroll";
 
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
+
+
   const handleChangeTheme = () => {
     setIsDarkMode(!isDarkMode);
   };
@@ -100,7 +102,11 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       </div>
 
       {/*Nav Desktop */}
-      <div className="z-30 fixed hidden sm:flex gap-5 justify-end items-center w-full dark:bg-[#191919] p-5 max-w-[1024px] bg-white transition-all">
+      <div
+        className={`${
+          scroll > 0 && "shadow-lg"
+        }  z-30 fixed hidden sm:flex gap-5 justify-end items-center w-full dark:bg-[#191919] p-5 max-w-[1024px] bg-white transition-all`}
+      >
         <Link
           to="home"
           offset={-100}
