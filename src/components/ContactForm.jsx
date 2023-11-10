@@ -49,6 +49,7 @@ const ContactForm = () => {
           className="font-medium text-black dark:text-gray-300 text-sm bg-transparent outline-none border-b border-b-black dark:border-b-white  py-1"
           type="text"
           name="user_name"
+          required
         />
       </label>
       <label className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 font-bold   ">
@@ -57,6 +58,7 @@ const ContactForm = () => {
           className="font-medium text-black dark:text-gray-300 text-sm bg-transparent outline-none border-b border-b-black dark:border-b-white  py-1"
           type="email"
           name="user_email"
+          required
         />
       </label>
       <label>
@@ -66,6 +68,7 @@ const ContactForm = () => {
         <textarea
           className="textarea font-medium text-black dark:text-gray-300 text-sm bg-transparent outline-none border-b border-b-black dark:border-b-white  py-1"
           name="message"
+          required
         />
       </label>
       <input
