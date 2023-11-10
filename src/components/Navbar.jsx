@@ -11,11 +11,11 @@ import {
 import { Link } from "react-scroll";
 
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
-
-
   const handleChangeTheme = () => {
     setIsDarkMode(!isDarkMode);
   };
+  window.localStorage.setItem("theme", JSON.stringify(isDarkMode));
+
   return (
     <nav className="w-full  max-w-[1024px] mx-auto  ">
       <div className="absolute z-50 top-[1rem]">

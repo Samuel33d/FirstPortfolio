@@ -8,11 +8,14 @@ import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(
+    JSON.parse(window.localStorage.getItem("theme"))
+  );
+
   return (
     <main
       className={` ${
-        isDarkMode && "dark bg-[#191919] text-white"
+        isDarkMode ? "dark bg-[#191919] text-white" : "bg-white"
       } min-h-screen  px-2 overflow-hidden transition-all`}
     >
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />

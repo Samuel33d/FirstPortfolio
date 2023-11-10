@@ -22,7 +22,7 @@ const Contact = () => {
           <img className=" hover:animate-pulse " src="/memoji.png" alt="" />
         </div>
         <section className="flex gap-2 absolute top-5 sm:top-20 right-5">
-          <div className="bg-[#191919]  dark:bg-white hover:bg-blue-500 rounded-full p-1 cursor-pointer dark:hover:bg-blue-500">
+          <div className="bg-[#191919]  dark:bg-white hover:bg-cyan-500 rounded-full p-1 cursor-pointer dark:hover:bg-cyan-500">
             <a
               href="https://github.com/Samuel33d"
               target="_blank"
@@ -31,7 +31,7 @@ const Contact = () => {
               <IconBrandGithubFilled className="dark:hover:text-white hover:text-[#191919] transition-all text-white dark:text-[#191919]" />
             </a>
           </div>
-          <div className=" dark:bg-white bg-[#191919] hover:bg-blue-500 rounded-full p-1 cursor-pointer dark:hover:bg-blue-500">
+          <div className=" dark:bg-white bg-[#191919] hover:bg-cyan-500 rounded-full p-1 cursor-pointer dark:hover:bg-cyan-500">
             <a
               href="https://www.linkedin.com/in/samuelbenedetti33/"
               target="_blank"

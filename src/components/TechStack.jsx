@@ -16,14 +16,14 @@ const TechStack = () => {
         </span>
 
         <section className="grid grid-cols-2 sm:grid-cols-4 sm:gap-5 transition-all place-items-center gap-2 my-16">
-          <TechUnit image={"/TechStack/html.png"} />
-          <TechUnit image={"/TechStack/css.png"} />
-          <TechUnit image={"/TechStack/js.png"} />
-          <TechUnit image={"/TechStack/react.png"} />
-          <TechUnit image={"/TechStack/tailwind.png"} />
-          <TechUnit image={"/TechStack/vscode.png"} />
-          <TechUnit image={"/TechStack/npm.png"} />
-          <TechUnit image={"/TechStack/git.png"} />
+          <TechUnit image={"/TechStack/html.png"} skill={"Html"} />
+          <TechUnit image={"/TechStack/css.png"} skill={"Css"} />
+          <TechUnit image={"/TechStack/js.png"} skill={"javascript"} />
+          <TechUnit image={"/TechStack/react.png"} skill={"react"} />
+          <TechUnit image={"/TechStack/tailwind.png"} skill={"tailwind"} />
+          <TechUnit image={"/TechStack/vscode.png"} skill={"Visual Studio"} />
+          <TechUnit image={"/TechStack/npm.png"} skill={"npm"} />
+          <TechUnit image={"/TechStack/git.png"} skill={"git"} />
         </section>
       </div>
     </section>
