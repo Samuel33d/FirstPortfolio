@@ -6,6 +6,8 @@ const ProjectsCard = ({ project }) => {
         <img src={project.projectImg} alt="" />
         <a
           href={project.siteLink}
+          target="_blank"
+          rel="noopener noreferrer"
           className="absolute bg-black/40 top-0 left-0 w-full h-full opacity-0 hover:opacity-100 duration-300 transition-all grid place-items-center"
         >
           <IconEye
