@@ -72,7 +72,7 @@ const ContactForm = () => {
         />
       </label>
       <input
-        className="font-bold px-8 py-1 sm:px-1 sm:py-1 sm:w-[40%] my-3 mx-auto rounded-full uppercase bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 cursor-pointer hover:tracking-wider transition-all"
+        className="font-bold px-8 py-1 sm:px-1 sm:py-1 sm:w-[40%] my-3 mx-auto rounded-full uppercase bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 cursor-pointer hover:tracking-wider transition-all text-black dark:text-white "
         type="submit"
         value="Enviar"
       />
