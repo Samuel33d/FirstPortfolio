@@ -15,7 +15,7 @@ const About = () => {
           data-aos-once="true"
           className="text-sm sm:text-xl"
         >
-          Soy un apasionado desarrollador Frontend de 21 años, actualmente
+          Soy un apasionado desarrollador Frontend de 22 años, actualmente
           ampliando mis habilidades. Tengo experiencia en tecnologías básicas
           como HTML, CSS y JavaScript, y estoy profundizando en bibliotecas y
           frameworks modernos como React JS. Mi objetivo es crear experiencias
