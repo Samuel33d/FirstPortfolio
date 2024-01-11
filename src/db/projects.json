@@ -58,7 +58,7 @@
   {
     "name": "Rick & Morty App",
     "projectImg": "/ProjectsImg/proyecto12.png",
-    "description": "Aplicación sobre Rick & Mory, en el cual puedes ver información sobre las locaciones de la serie y cada uno de sus residentes.",
+    "description": "Aplicación sobre Rick & Morty, en el cual puedes ver información sobre las locaciones de la serie y cada uno de sus residentes.",
     "stack": "HTML , CSS, ReactJS, Axios, Tailwind.",
     "siteLink": "https://rickandmortyappsbacademlo.netlify.app/",
     "githubLink": "https://github.com/Samuel33d/RickAndMortyApp"

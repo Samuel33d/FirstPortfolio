@@ -19,7 +19,11 @@ const Contact = () => {
       >
         <ContactForm />
         <div className="hidden sm:block ">
-          <img className=" hover:animate-pulse " src="/memoji.png" alt="" />
+          <img
+            className=" hover:animate-pulse "
+            src="/memojiContact.png"
+            alt=""
+          />
         </div>
         <section className="flex gap-2 absolute top-5 sm:top-20 right-5">
           <div className="bg-[#191919]  dark:bg-white hover:bg-cyan-500 rounded-full p-1 cursor-pointer dark:hover:bg-cyan-500">

@@ -11,7 +11,9 @@ const Projects = () => {
         Proyectos
       </h2>
 
-      <span className="text-sm sm:text-lg mt-1">Apliaciones que he creado</span>
+      <span className="text-sm sm:text-lg mt-1">
+        Aplicaciones que he creado
+      </span>
       <ProjectsList projects={projects} />
     </section>
   );

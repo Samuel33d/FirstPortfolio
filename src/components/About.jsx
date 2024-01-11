@@ -15,13 +15,23 @@ const About = () => {
           data-aos-once="true"
           className="text-sm sm:text-xl"
         >
-          Soy un apasionado desarrollador Frontend de 22 años, actualmente
-          ampliando mis habilidades. Tengo experiencia en tecnologías básicas
-          como HTML, CSS y JavaScript, y estoy profundizando en bibliotecas y
-          frameworks modernos como React JS. Mi objetivo es crear experiencias
-          web atractivas y efectivas que cautiven a los usuarios. Estoy ansioso
-          por seguir aprendiendo y colaborar en proyectos innovadores que
-          impulsen el futuro de la web.
+          Soy un apasionado desarrollador Full Stack de 22 años con experiencia
+          en tecnologías esenciales como HTML, CSS y JavaScript, así como en
+          frameworks modernos como React JS. Mi enfoque se ha expandido hacia el
+          desarrollo del lado del servidor, utilizando Node.js, Express y
+          Sequelize para construir APIs eficientes y trabajar con bases de datos
+          relacionales, especialmente PostgreSQL. Estoy constantemente inmerso
+          en el estudio y la actualización de mis habilidades para ofrecer
+          soluciones web innovadoras y de vanguardia
+        </p>
+        <p
+          data-aos="fade-right"
+          data-aos-once="true"
+          className="text-sm sm:text-xl mt-6"
+        >
+          Mi objetivo es crear experiencias web completas y poderosas que
+          cautiven a los usuarios. Estoy ansioso por colaborar en proyectos
+          innovadores que impulsen el futuro de la web.
         </p>
       </article>
 

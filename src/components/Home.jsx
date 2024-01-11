@@ -41,10 +41,10 @@ const Home = () => {
         </span>
       </div>
       <div data-aos="fade-in" className="px-2 transition-all">
-        <div className="rounded-full overflow-hidden bg-gradient-to-b from-blue-500 via-red-500 to-purple-500  transition-all">
+        <div className="rounded-full">
           <img
-            className="p-2 rounded-full w-72 h-72 object-cover hover:grayscale hover:scale-105	transition-all "
-            src="/portfolioimg.jpg"
+            className="hover:scale-105 duration-700 hover:grayscale"
+            src="/memoji.png"
             alt=""
           />
         </div>

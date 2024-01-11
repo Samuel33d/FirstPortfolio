@@ -19,11 +19,14 @@ const TechStack = () => {
           <TechUnit image={"/TechStack/html.png"} skill={"Html"} />
           <TechUnit image={"/TechStack/css.png"} skill={"Css"} />
           <TechUnit image={"/TechStack/js.png"} skill={"javascript"} />
-          <TechUnit image={"/TechStack/react.png"} skill={"react"} />
+          <TechUnit image={"/TechStack/react.png"} skill={"react js"} />
           <TechUnit image={"/TechStack/tailwind.png"} skill={"tailwind"} />
-          <TechUnit image={"/TechStack/vscode.png"} skill={"Visual Studio"} />
+          <TechUnit image={"/TechStack/node.png"} skill={"Node JS"} />
           <TechUnit image={"/TechStack/npm.png"} skill={"npm"} />
           <TechUnit image={"/TechStack/git.png"} skill={"git"} />
+          <TechUnit image={"/TechStack/postgresql.png"} skill={"postgresql"} />
+          <TechUnit image={"/TechStack/express.png"} skill={"express"} />
+          <TechUnit image={"/TechStack/sequelizejs.png"} skill={"sequelize"} />
         </section>
       </div>
     </section>
