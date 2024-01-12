@@ -62,5 +62,12 @@
     "stack": "HTML , CSS, ReactJS, Axios, Tailwind.",
     "siteLink": "https://rickandmortyappsbacademlo.netlify.app/",
     "githubLink": "https://github.com/Samuel33d/RickAndMortyApp"
+  },
+  {
+    "name": "FrontEnd Mentor",
+    "projectImg": "/ProjectsImg/proyecto14.jpeg",
+    "description": "Retos de proyectos Front-end con el fin de seguir practicando e innovando tecnologías.",
+    "stack": "HTML , CSS, ReactJS, Axios, Tailwind, entre otros.",
+    "siteLink": "https://www.frontendmentor.io/profile/Samuel33d/solutions"
   }
 ]

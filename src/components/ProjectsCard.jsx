@@ -1,7 +1,11 @@
 import { IconBrandGithubFilled, IconEye, IconLink } from "@tabler/icons-react";
 const ProjectsCard = ({ project }) => {
   return (
-    <article className="transition-all dark:bg-[#363535] shadow-2xl border-2 w-[290px] sm:w-[300px] dark:border-[#363535]  rounded-lg overflow-hidden text-left my-3 hover:scale-105 hover:-translate-y-3 duration-300">
+    <article
+      data-aos="zoom-in"
+      data-aos-once="true"
+      className="transition-all dark:bg-[#363535] shadow-2xl border-2 w-[290px] sm:w-[300px] dark:border-[#363535]  rounded-lg overflow-hidden text-left my-3 hover:scale-105 hover:-translate-y-3 duration-300"
+    >
       <header className="relative h-26">
         <img src={project.projectImg} alt="" />
         <a
