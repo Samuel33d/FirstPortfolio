@@ -22,7 +22,7 @@ const About = () => {
           Sequelize para construir APIs eficientes y trabajar con bases de datos
           relacionales, especialmente PostgreSQL. Estoy constantemente inmerso
           en el estudio y la actualización de mis habilidades para ofrecer
-          soluciones web innovadoras y de vanguardia
+          soluciones web innovadoras y de vanguardia.
         </p>
         <p
           data-aos="fade-right"
