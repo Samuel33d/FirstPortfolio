@@ -17,6 +17,8 @@ import { IconWorld } from "@tabler/icons-react";
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const [isModalShow, setIsModalShow] = useState(false);
 
+  const [isEnglish, setIsEnglish] = useState(false);
+
   const { t } = useTranslation();
 
   const handleChangeTheme = () => {
@@ -25,11 +27,22 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   window.localStorage.setItem("theme", JSON.stringify(isDarkMode));
 
   const handleLngButton = (lng) => {
+    setIsEnglish(!isEnglish);
     i18n.changeLanguage(lng);
   };
 
+  const handleLngButtonMobile = () => {
+    if (isEnglish) {
+      i18n.changeLanguage("es");
+      setIsEnglish(false);
+    } else {
+      i18n.changeLanguage("en");
+      setIsEnglish(true);
+    }
+  };
+
   return (
-    <nav className="w-full max-w-[1024px] mx-auto  ">
+    <nav className="w-full max-w-[1024px] mx-auto">
       <div className="absolute z-50 top-[1rem]">
         <h2
           className="flex   justify-center items-center transition-all 
@@ -111,7 +124,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         <button onClick={handleChangeTheme} className="cursor-pointer">
           {isDarkMode ? <IconSun /> : <IconMoon />}
         </button>
-        <button className="hover:text-red-700" onClick={handleLngButton}>
+        <button className="" onClick={handleLngButtonMobile}>
           <IconWorld />
         </button>
       </div>
@@ -185,36 +198,44 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           {isDarkMode ? <IconSun /> : <IconMoon />}
         </button>
 
-        <button
-          className="relative"
+        <div
+          className="relative cursor-pointer hover:scale-110 transition-all"
           onClick={() => setIsModalShow(!isModalShow)}
         >
           <IconWorld />
           <div
             className={`${
-              isModalShow ? "opacity-100 " : "opacity-0 cursor-default"
-            } absolute w-20 right-0 bg-slate-800 rounded-lg border mt-2 text-sm grid gap-2 p-1 transition-all `}
+              isModalShow ? "opacity-100 " : "opacity-0 "
+            } absolute w-20 cursor-default right-0 bg-slate-800 rounded-lg border mt-2 text-sm grid gap-2 p-1 transition-all `}
           >
             <button
-              onClick={() => handleLngButton("en")}
+              disabled={isEnglish}
+              onClick={() => {
+                handleLngButton("en");
+                setIsEnglish(true);
+              }}
               className={`${
                 isModalShow ? "block" : "hidden"
-              } flex justify-center items-center gap-1 hover:bg-slate-700 p-1 transition-all rounded-lg`}
+              } flex justify-center items-center gap-1 hover:bg-slate-700 p-1 transition-all rounded-lg text-white`}
             >
               <img src="/usa.png" alt="" />
               EN
             </button>
             <button
-              onClick={() => handleLngButton("es")}
+              disabled={!isEnglish}
+              onClick={() => {
+                handleLngButton("es");
+                setIsEnglish(false);
+              }}
               className={`${
                 isModalShow ? "block" : "hidden"
-              } flex justify-center items-center gap-1 hover:bg-slate-600 transition-all rounded-lg p-1`}
+              } flex justify-center items-center gap-1 hover:bg-slate-600 transition-all rounded-lg p-1 text-white`}
             >
               <img src="/espana.png" alt="" />
               ES
             </button>
           </div>
-        </button>
+        </div>
       </div>
     </nav>
   );
