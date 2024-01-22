@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Home from "./components/Home";
+import About from "./sections/About";
+import Contact from "./sections/Contact";
+import Home from "./sections/Home";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import TechStack from "./components/TechStack";
+import Projects from "./sections/Projects";
+import TechStack from "./sections/TechStack";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(

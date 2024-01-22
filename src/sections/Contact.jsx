@@ -1,17 +1,24 @@
-import { IconBrandGithubFilled, IconBrandLinkedin } from "@tabler/icons-react";
-import ContactForm from "./ContactForm";
-import Footer from "./Footer";
+import {
+  IconBrandGithubFilled,
+  IconBrandLinkedin,
+  IconFileCv,
+} from "@tabler/icons-react";
+import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+  
   return (
     <section
       id="contact"
       className="relative max-w-[1024px] mx-auto min-h-screen flex flex-col justify-center items-center transition-all overflow-hidden pt-20"
     >
       <h2 className="text-2xl font-bold text-[#42446E] dark:text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 sm:text-4xl transition-all">
-        Contacto
+        {t("contactTitle")}
       </h2>
-      <span className="text-sm sm:text-lg mt-1">Mandame un mensaje!</span>
+      <span className="text-sm sm:text-lg mt-1">{t("contactDescription")}</span>
       <div
         data-aos="fade-in"
         data-aos-once="true"
@@ -26,6 +33,15 @@ const Contact = () => {
           />
         </div>
         <section className="flex gap-2 absolute top-5 sm:top-20 right-5">
+          <div className="bg-[#191919]  dark:bg-white hover:bg-cyan-500 rounded-full p-1 cursor-pointer dark:hover:bg-cyan-500">
+            <a
+              href="https://drive.google.com/file/d/1hdul5Y_xQPAxU8UrubLkJNoGNhP-vaZz/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconFileCv className="dark:hover:text-white hover:text-[#191919] transition-all text-white dark:text-[#191919]" />
+            </a>
+          </div>
           <div className="bg-[#191919]  dark:bg-white hover:bg-cyan-500 rounded-full p-1 cursor-pointer dark:hover:bg-cyan-500">
             <a
               href="https://github.com/Samuel33d"

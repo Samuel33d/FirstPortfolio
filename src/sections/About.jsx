@@ -1,6 +1,9 @@
-import EducationCard from "./EducationCard";
+import { useTranslation } from "react-i18next";
+import EducationCard from "../components/EducationCard";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       id="about"
@@ -8,51 +11,40 @@ const About = () => {
     >
       <article className="flex flex-col gap-1 w-full">
         <h2 className="text-2xl font-bold text-[#42446E] dark:text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-600 to-purple-500 sm:text-4xl transition-all ">
-          Sobre mí
+          {t("aboutTitle1")}
         </h2>
         <p
           data-aos="fade-right"
           data-aos-once="true"
           className="text-sm sm:text-xl"
         >
-          Soy un apasionado desarrollador Full Stack de 22 años con experiencia
-          en tecnologías esenciales como HTML, CSS y JavaScript, así como en
-          frameworks modernos como React JS. Mi enfoque se ha expandido hacia el
-          desarrollo del lado del servidor, utilizando Node.js, Express y
-          Sequelize para construir APIs eficientes y trabajar con bases de datos
-          relacionales, especialmente PostgreSQL. Estoy constantemente inmerso
-          en el estudio y la actualización de mis habilidades para ofrecer
-          soluciones web innovadoras y de vanguardia.
+          {t("aboutParagraph1")}
         </p>
         <p
           data-aos="fade-right"
           data-aos-once="true"
           className="text-sm sm:text-xl mt-6"
         >
-          Mi objetivo es crear experiencias web completas y poderosas que
-          cautiven a los usuarios. Estoy ansioso por colaborar en proyectos
-          innovadores que impulsen el futuro de la web.
+          {t("aboutParagraph2")}
         </p>
       </article>
 
       <article className="flex flex-col gap-1 w-full">
         <h2 className="text-2xl font-bold text-[#42446E] dark:text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 sm:text-4xl transition-all">
-          Educación
+          {t("aboutTitle2")}
         </h2>
 
         <EducationCard
-          title={
-            "Licenciatura en Administración de Empresas mención Informatica"
-          }
-          institute={"Universidad Nacional Experimental Simón Rodríguez"}
+          title={t("education1Lic")}
+          institute={t("education1Inst")}
           date={"Oct 2022 - Act"}
           time={"Full Time"}
         />
         <div className="border-b border-blue-500"></div>
         <EducationCard
-          title={"Desarrollo Web Full Stack"}
-          institute={"Academlo"}
-          date={"Ago 2023 - Act"}
+          title={t("education2Lic")}
+          institute={t("education2Inst")}
+          date={t("education2Date")}
           time={"Part time"}
         />
       </article>

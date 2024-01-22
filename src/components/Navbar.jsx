@@ -9,12 +9,25 @@ import {
 } from "@tabler/icons-react";
 
 import { Link } from "react-scroll";
+import i18n from "../plugins/i18n";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { IconLanguageHiragana } from "@tabler/icons-react";
 
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
+  const [isEnglish, setIsSpanish] = useState(false);
+
+  const { t } = useTranslation();
+
   const handleChangeTheme = () => {
     setIsDarkMode(!isDarkMode);
   };
   window.localStorage.setItem("theme", JSON.stringify(isDarkMode));
+
+  const handleLngButton = () => {
+    setIsSpanish(!isEnglish);
+    i18n.changeLanguage(isEnglish ? "es" : "en");
+  };
 
   return (
     <nav className="w-full  max-w-[1024px] mx-auto  ">
@@ -99,6 +112,9 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         <button onClick={handleChangeTheme} className="cursor-pointer">
           {isDarkMode ? <IconSun /> : <IconMoon />}
         </button>
+        <button className="hover:text-red-700" onClick={handleLngButton}>
+          <IconLanguageHiragana />
+        </button>
       </div>
 
       {/*Nav Desktop */}
@@ -116,7 +132,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           activeClass="linkActive"
           className="cursor-pointer"
         >
-          <span>Home</span>
+          <span>{t("navHome")}</span>
         </Link>
         <Link
           to="about"
@@ -127,7 +143,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           activeClass="linkActive"
           className="cursor-pointer"
         >
-          <span>Sobre mí</span>
+          <span>{t("navAboutMe")}</span>
         </Link>
         <Link
           to="techStack"
@@ -149,7 +165,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           activeClass="linkActive"
           className="cursor-pointer"
         >
-          <span>Proyectos</span>
+          <span>{t("navProjects")}</span>
         </Link>
         <Link
           to="contact"
@@ -160,10 +176,21 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           activeClass="linkActive"
           className="cursor-pointer"
         >
-          <span>Contacto</span>
+          <span>{t("navContact")}</span>
         </Link>
-        <button onClick={handleChangeTheme} className="cursor-pointer">
+
+        <button
+          onClick={handleChangeTheme}
+          className="hover:scale-125 transition-all"
+        >
           {isDarkMode ? <IconSun /> : <IconMoon />}
+        </button>
+
+        <button
+          className="hover:scale-125 transition-all"
+          onClick={handleLngButton}
+        >
+          <IconLanguageHiragana />
         </button>
       </div>
     </nav>

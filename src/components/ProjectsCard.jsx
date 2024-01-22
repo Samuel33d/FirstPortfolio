@@ -1,5 +1,9 @@
 import { IconBrandGithubFilled, IconEye, IconLink } from "@tabler/icons-react";
-const ProjectsCard = ({ project }) => {
+import { useTranslation } from "react-i18next";
+
+const ProjectsCard = ({ project, index }) => {
+  const { t } = useTranslation();
+
   return (
     <article
       data-aos="zoom-in"
@@ -23,9 +27,9 @@ const ProjectsCard = ({ project }) => {
       </header>
       <section className="p-5 flex flex-col gap-4 pb-0">
         <h4 className="text-xl dark:hover:text-cyan-500 transition-all">
-          {project.name}
+          {index === 6 ? t("project6Title") : project.name}
         </h4>
-        <p className="text-[13px] h-[70px] ">{project.description}</p>
+        <p className="text-[13px] h-[70px] ">{t(`project${index}`)}</p>
         <span className="text-[12px]">
           Tech stack : <span className="text-gray-400">{project.stack}</span>
         </span>

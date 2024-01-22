@@ -1,6 +1,9 @@
-import TechUnit from "./TechUnit";
+import { useTranslation } from "react-i18next";
+import TechUnit from "../components/TechUnit";
 
 const TechStack = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       id="techStack"
@@ -8,11 +11,11 @@ const TechStack = () => {
     >
       <div className="flex flex-col ">
         <h2 className="text-2xl font-bold text-[#42446E] dark:text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 sm:text-4xl transition-all">
-          Mi Stack de Tecnologías
+          {t("technologyStackTitle")}
         </h2>
 
         <span className="text-sm sm:text-lg mt-1">
-          Tecnologías con las que he trabajado
+          {t("technologyStackDescription")}
         </span>
 
         <section className="grid grid-cols-2 sm:grid-cols-4 sm:gap-5 transition-all place-items-center gap-2 my-16">

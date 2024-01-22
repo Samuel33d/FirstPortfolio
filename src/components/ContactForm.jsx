@@ -1,7 +1,10 @@
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 import Swal from "sweetalert2";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+
   const handleSubmit = (e) => {
     const formData = new FormData(e.target);
 
@@ -12,8 +15,7 @@ const ContactForm = () => {
     emailjs
       .send("service_7rc7rgm", "template_1", data, "bYXFKzcNawuqmcPK1")
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
           const Toast = Swal.mixin({
             toast: true,
             position: "top-end",
@@ -44,7 +46,7 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
     >
       <label className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500  to-purple-500 font-bold  ">
-        Nombre:
+        {t("contactName")}
         <input
           className="font-medium text-black dark:text-gray-300 text-sm bg-transparent outline-none border-b border-b-black dark:border-b-white  py-1"
           type="text"
@@ -63,7 +65,7 @@ const ContactForm = () => {
       </label>
       <label>
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 font-bold">
-          Mensaje:
+          {t("contactMessage")}
         </span>
         <textarea
           className="textarea font-medium text-black dark:text-gray-300 text-sm bg-transparent outline-none border-b border-b-black dark:border-b-white  py-1"
@@ -74,7 +76,7 @@ const ContactForm = () => {
       <input
         className="font-bold px-8 py-1 sm:px-1 sm:py-1 sm:w-[40%] my-3 mx-auto rounded-full uppercase bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 cursor-pointer hover:tracking-wider transition-all text-black dark:text-white "
         type="submit"
-        value="Enviar"
+        value={t("contactBtn")}
       />
     </form>
   );
