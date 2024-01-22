@@ -12,10 +12,10 @@ import { Link } from "react-scroll";
 import i18n from "../plugins/i18n";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { IconLanguageHiragana } from "@tabler/icons-react";
+import { IconWorld } from "@tabler/icons-react";
 
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
-  const [isEnglish, setIsSpanish] = useState(false);
+  const [isModalShow, setIsModalShow] = useState(false);
 
   const { t } = useTranslation();
 
@@ -24,13 +24,12 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   };
   window.localStorage.setItem("theme", JSON.stringify(isDarkMode));
 
-  const handleLngButton = () => {
-    setIsSpanish(!isEnglish);
-    i18n.changeLanguage(isEnglish ? "es" : "en");
+  const handleLngButton = (lng) => {
+    i18n.changeLanguage(lng);
   };
 
   return (
-    <nav className="w-full  max-w-[1024px] mx-auto  ">
+    <nav className="w-full max-w-[1024px] mx-auto  ">
       <div className="absolute z-50 top-[1rem]">
         <h2
           className="flex   justify-center items-center transition-all 
@@ -113,7 +112,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           {isDarkMode ? <IconSun /> : <IconMoon />}
         </button>
         <button className="hover:text-red-700" onClick={handleLngButton}>
-          <IconLanguageHiragana />
+          <IconWorld />
         </button>
       </div>
 
@@ -187,10 +186,34 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         </button>
 
         <button
-          className="hover:scale-125 transition-all"
-          onClick={handleLngButton}
+          className="relative"
+          onClick={() => setIsModalShow(!isModalShow)}
         >
-          <IconLanguageHiragana />
+          <IconWorld />
+          <div
+            className={`${
+              isModalShow ? "opacity-100 " : "opacity-0 cursor-default"
+            } absolute w-20 right-0 bg-slate-800 rounded-lg border mt-2 text-sm grid gap-2 p-1 transition-all `}
+          >
+            <button
+              onClick={() => handleLngButton("en")}
+              className={`${
+                isModalShow ? "block" : "hidden"
+              } flex justify-center items-center gap-1 hover:bg-slate-700 p-1 transition-all rounded-lg`}
+            >
+              <img src="/usa.png" alt="" />
+              EN
+            </button>
+            <button
+              onClick={() => handleLngButton("es")}
+              className={`${
+                isModalShow ? "block" : "hidden"
+              } flex justify-center items-center gap-1 hover:bg-slate-600 transition-all rounded-lg p-1`}
+            >
+              <img src="/espana.png" alt="" />
+              ES
+            </button>
+          </div>
         </button>
       </div>
     </nav>
