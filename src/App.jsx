@@ -16,7 +16,7 @@ function App() {
     <main
       className={` ${
         isDarkMode ? "dark bg-[#191919] text-white" : " bg-white/40"
-      } min-h-screen overflow-hidden bg-white/5  px-2 transition-all`}
+      } min-h-screen overflow-hidden   px-2 transition-all`}
     >
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Home />
