@@ -7,18 +7,18 @@ const TechStack = () => {
   return (
     <section
       id="techStack"
-      className="max-w-[1024px] mx-auto  min-h-screen text-center py-1 sm:py-20 flex flex-col justify-center"
+      className="mx-auto flex  min-h-screen max-w-[1024px] flex-col justify-center py-1 text-center sm:py-20"
     >
       <div className="flex flex-col ">
-        <h2 className="text-2xl font-bold text-[#42446E] dark:text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 sm:text-4xl transition-all">
+        <h2 className="bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 bg-clip-text text-2xl font-bold text-[#42446E] transition-all dark:text-transparent sm:text-4xl">
           {t("technologyStackTitle")}
         </h2>
 
-        <span className="text-sm sm:text-lg mt-1">
+        <span className="mt-1 text-sm sm:text-lg">
           {t("technologyStackDescription")}
         </span>
 
-        <section className="grid grid-cols-2 sm:grid-cols-4 sm:gap-5 transition-all place-items-center gap-2 my-16">
+        <section className="my-16 grid grid-cols-2 place-items-center gap-2 transition-all sm:grid-cols-4 sm:gap-5">
           <TechUnit image={"/TechStack/html.png"} skill={"Html"} />
           <TechUnit image={"/TechStack/css.png"} skill={"Css"} />
           <TechUnit image={"/TechStack/js.png"} skill={"javascript"} />

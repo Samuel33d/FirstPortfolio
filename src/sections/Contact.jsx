@@ -3,26 +3,25 @@ import {
   IconBrandLinkedin,
   IconFileCv,
 } from "@tabler/icons-react";
-import ContactForm from "../components/ContactForm";
-import Footer from "../components/Footer";
 import { useTranslation } from "react-i18next";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   const { t } = useTranslation();
-  
+
   return (
     <section
       id="contact"
-      className="relative max-w-[1024px] mx-auto min-h-screen flex flex-col justify-center items-center transition-all overflow-hidden pt-20"
+      className="relative mx-auto flex min-h-screen max-w-[1024px] flex-col items-center justify-center overflow-hidden pt-20 transition-all"
     >
-      <h2 className="text-2xl font-bold text-[#42446E] dark:text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 sm:text-4xl transition-all">
+      <h2 className="bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 bg-clip-text text-2xl font-bold text-[#42446E] transition-all dark:text-transparent sm:text-4xl">
         {t("contactTitle")}
       </h2>
-      <span className="text-sm sm:text-lg mt-1">{t("contactDescription")}</span>
+      <span className="mt-1 text-sm sm:text-lg">{t("contactDescription")}</span>
       <div
         data-aos="fade-in"
         data-aos-once="true"
-        className="flex sm:grid sm:grid-cols-2 gap-3 sm:place-items-center w-full px-2 transition-all"
+        className="flex w-full gap-3 px-2 transition-all sm:grid sm:grid-cols-2 sm:place-items-center"
       >
         <ContactForm />
         <div className="hidden sm:block ">
@@ -32,37 +31,36 @@ const Contact = () => {
             alt=""
           />
         </div>
-        <section className="flex gap-2 absolute top-5 sm:top-20 right-5">
-          <div className="bg-[#191919]  dark:bg-white hover:bg-cyan-500 rounded-full p-1 cursor-pointer dark:hover:bg-cyan-500">
+        <section className="absolute right-5 top-5 flex gap-2 sm:top-20">
+          <div className="cursor-pointer  rounded-full bg-[#191919] p-1 hover:bg-cyan-500 dark:bg-white dark:hover:bg-cyan-500">
             <a
               href="https://drive.google.com/file/d/1hdul5Y_xQPAxU8UrubLkJNoGNhP-vaZz/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconFileCv className="dark:hover:text-white hover:text-[#191919] transition-all text-white dark:text-[#191919]" />
+              <IconFileCv className="text-white transition-all hover:text-[#191919] dark:text-[#191919] dark:hover:text-white" />
             </a>
           </div>
-          <div className="bg-[#191919]  dark:bg-white hover:bg-cyan-500 rounded-full p-1 cursor-pointer dark:hover:bg-cyan-500">
+          <div className="cursor-pointer  rounded-full bg-[#191919] p-1 hover:bg-cyan-500 dark:bg-white dark:hover:bg-cyan-500">
             <a
               href="https://github.com/Samuel33d"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconBrandGithubFilled className="dark:hover:text-white hover:text-[#191919] transition-all text-white dark:text-[#191919]" />
+              <IconBrandGithubFilled className="text-white transition-all hover:text-[#191919] dark:text-[#191919] dark:hover:text-white" />
             </a>
           </div>
-          <div className=" dark:bg-white bg-[#191919] hover:bg-cyan-500 rounded-full p-1 cursor-pointer dark:hover:bg-cyan-500">
+          <div className=" cursor-pointer rounded-full bg-[#191919] p-1 hover:bg-cyan-500 dark:bg-white dark:hover:bg-cyan-500">
             <a
               href="https://www.linkedin.com/in/samuelbenedetti33/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconBrandLinkedin className="dark:hover:text-white hover:text-[#191919] transition-all dark:text-[#191919] text-white" />
+              <IconBrandLinkedin className="text-white transition-all hover:text-[#191919] dark:text-[#191919] dark:hover:text-white" />
             </a>
           </div>
         </section>
       </div>
-      <Footer />
     </section>
   );
 };

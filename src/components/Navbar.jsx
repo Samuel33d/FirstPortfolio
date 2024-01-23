@@ -42,12 +42,12 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   };
 
   return (
-    <nav className="w-full max-w-[1024px] mx-auto">
-      <div className="absolute z-50 top-[1rem]">
+    <nav className="mx-auto w-full max-w-[1024px]">
+      <div className="absolute top-[1rem] z-50">
         <h2
-          className="flex   justify-center items-center transition-all 
-          text-[#42446E] 
-          dark:text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 text-3xl font-bold  hover:animate-pulse "
+          className="flex items-center justify-center bg-gradient-to-r 
+          from-blue-500 
+          to-purple-500 bg-clip-text text-3xl font-bold text-[#42446E] transition-all hover:animate-pulse  dark:text-transparent "
         >
           <span className="text-4xl">{"<"}</span> S / B{" "}
           <span className="text-4xl">{">"}</span>
@@ -55,7 +55,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       </div>
 
       {/*Nav Mobile */}
-      <div className=" flex sm:hidden fixed left-1/2 -translate-x-1/2 p-5 gap-5 bottom-4 bg-black/30 dark:text-white  backdrop-blur-sm rounded-full z-50 transition-all">
+      <div className=" fixed bottom-4 left-1/2 z-50 flex -translate-x-1/2 gap-5 rounded-full bg-black/30 p-5  backdrop-blur-sm transition-all dark:text-white sm:hidden">
         <Link
           to="home"
           offset={-100}
@@ -133,7 +133,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       <div
         className={`${
           scroll > 0 && "shadow-lg"
-        }  z-30 fixed hidden sm:flex gap-5 justify-end items-center w-full dark:bg-[#191919] p-5 max-w-[1024px] bg-white transition-all`}
+        }  fixed z-30 hidden w-full max-w-[1024px] items-center justify-end gap-5 bg-white p-5 transition-all dark:bg-[#191919] sm:flex`}
       >
         <Link
           to="home"
@@ -193,20 +193,20 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
         <button
           onClick={handleChangeTheme}
-          className="hover:scale-125 transition-all"
+          className="transition-all hover:scale-125"
         >
           {isDarkMode ? <IconSun /> : <IconMoon />}
         </button>
 
         <div
-          className="relative cursor-pointer hover:scale-110 transition-all"
+          className="relative cursor-pointer transition-all hover:scale-110"
           onClick={() => setIsModalShow(!isModalShow)}
         >
           <IconWorld />
           <div
             className={`${
               isModalShow ? "opacity-100 " : "opacity-0 "
-            } absolute w-20 cursor-default right-0 bg-slate-800 rounded-lg border mt-2 text-sm grid gap-2 p-1 transition-all `}
+            } absolute right-0 mt-2 grid w-20 cursor-default gap-2 rounded-lg border  border-black bg-white p-1 text-sm transition-all dark:border-white dark:bg-[#363535]`}
           >
             <button
               disabled={isEnglish}
@@ -216,7 +216,8 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               }}
               className={`${
                 isModalShow ? "block" : "hidden"
-              } flex justify-center items-center gap-1 hover:bg-slate-700 p-1 transition-all rounded-lg text-white`}
+              } flex items-center justify-center gap-1 rounded-lg p-1 text-black transition-all hover:bg-gray-300 
+              dark:text-white dark:hover:bg-gray-600`}
             >
               <img src="/usa.png" alt="" />
               EN
@@ -229,7 +230,8 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               }}
               className={`${
                 isModalShow ? "block" : "hidden"
-              } flex justify-center items-center gap-1 hover:bg-slate-600 transition-all rounded-lg p-1 text-white`}
+              } flex items-center justify-center gap-1 rounded-lg p-1 text-black transition-all hover:bg-gray-300 
+              dark:text-white dark:hover:bg-gray-600`}
             >
               <img src="/espana.png" alt="" />
               ES

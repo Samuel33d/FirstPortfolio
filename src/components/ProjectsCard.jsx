@@ -8,15 +8,15 @@ const ProjectsCard = ({ project, index }) => {
     <article
       data-aos="zoom-in"
       data-aos-once="true"
-      className="transition-all dark:bg-[#363535] shadow-2xl border-2 w-[290px] sm:w-[300px] dark:border-[#363535]  rounded-lg overflow-hidden text-left my-3 hover:scale-105 hover:-translate-y-3 duration-300"
+      className={`${index % 2 ? "glow:bg-blue-500/20 " : "glow:bg-purple-500/20 "} g my-3 h-[387.95px] w-[290px] overflow-hidden rounded-lg border-2 border-black/10 bg-white  text-left shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:scale-105 dark:border-[#363535] dark:bg-[#363535] sm:w-[300px]`}
     >
-      <header className="relative h-26">
+      <header className="h-26 relative">
         <img src={project.projectImg} alt="" />
         <a
           href={project.siteLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute bg-black/40 top-0 left-0 w-full h-full opacity-0 hover:opacity-100 duration-300 transition-all grid place-items-center"
+          className="absolute left-0 top-0 grid h-full w-full place-items-center bg-black/40 opacity-0 transition-all duration-300 hover:opacity-100"
         >
           <IconEye
             size={50}
@@ -25,18 +25,25 @@ const ProjectsCard = ({ project, index }) => {
           />
         </a>
       </header>
-      <section className="p-5 flex flex-col gap-4 pb-0">
-        <h4 className="text-xl dark:hover:text-cyan-500 transition-all">
+      <section className="flex flex-col gap-4 p-5 pb-0">
+        <h4
+          className={` ${index % 2 ? "glow:text-blue-500" : "glow:text-purple-500"}  border-none text-xl`}
+        >
           {index === 6 ? t("project6Title") : project.name}
         </h4>
-        <p className="text-[13px] h-[70px] ">{t(`project${index}`)}</p>
+        <p className="h-[70px] text-[13px] ">{t(`project${index}`)}</p>
         <span className="text-[12px]">
-          Tech stack : <span className="text-gray-400">{project.stack}</span>
+          Tech stack :{" "}
+          <span
+            className={` ${index % 2 ? "glow:text-blue-500" : "glow:text-purple-500"}  text-gray-400 `}
+          >
+            {project.stack}
+          </span>
         </span>
       </section>
-      <footer className="flex justify-end gap-3 items-center pb-3 px-6 mt-1">
+      <footer className="mt-1 flex items-center justify-end gap-3 px-6 pb-3">
         <a
-          className="w-7 h-7 flex justify-center items-center hover:text-cyan-500 transition-all"
+          className="flex h-7 w-7 items-center justify-center transition-all hover:text-cyan-500"
           href={project.siteLink}
           target="_blank"
           rel="noopener noreferrer"
@@ -44,7 +51,7 @@ const ProjectsCard = ({ project, index }) => {
           <IconLink />
         </a>
         <a
-          className={`relative w-7 h-7 bg-[#191919]  dark:bg-white p-[2px] rounded-full hover:bg-cyan-500 dark:hover:bg-cyan-500 transition-all ${
+          className={`relative h-7 w-7 rounded-full  bg-[#191919] p-[2px] transition-all hover:bg-cyan-500 dark:bg-white dark:hover:bg-cyan-500 ${
             project.githubLink === undefined ? "hidden" : "block"
           }`}
           href={project.githubLink}

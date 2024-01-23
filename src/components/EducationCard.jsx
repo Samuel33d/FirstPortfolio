@@ -1,12 +1,11 @@
 import { IconBuildingBank } from "@tabler/icons-react";
 
 const EducationCard = ({ title, institute, date, time }) => {
-
   return (
     <article
       data-aos="fade-right"
       data-aos-once="true"
-      className="flex flex-col gap-3 md:grid md:grid-cols-[auto,auto] sm:gap-5 transition-all   pb-6 sm:py-6"
+      className="flex flex-col gap-3 pb-6 transition-all sm:gap-5 sm:py-6   md:grid md:grid-cols-[auto,auto]"
     >
       <div>
         <h3 className="text-md sm:text-xl">{title}</h3>
@@ -15,11 +14,11 @@ const EducationCard = ({ title, institute, date, time }) => {
         </span>
       </div>
 
-      <div className="flex flex-row-reverse justify-between   transition-all md:flex-col sm:justify-self-end ">
-        <span className="flex bg-green-200 w-fit px-2 rounded-full text-green-900 font-bold ">
+      <div className="flex flex-row-reverse justify-between   transition-all sm:justify-self-end md:flex-col ">
+        <span className="flex w-fit rounded-full bg-green-200 px-2 font-bold text-green-900 ">
           {time}
         </span>
-        <span className="flex text-sm text-slate-800 dark:text-slate-400 gap-2 items-center ">
+        <span className="flex items-center gap-2 text-sm text-slate-800 dark:text-slate-400 ">
           <IconBuildingBank /> {date}
         </span>
       </div>

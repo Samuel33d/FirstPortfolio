@@ -7,10 +7,10 @@ const About = () => {
   return (
     <section
       id="about"
-      className="max-w-[1024px] px-2 mx-auto min-h-screen flex sm:justify-center justify-start items-start flex-col gap-5 sm:gap-10  py-5 sm:py-20 transition-all"
+      className="mx-auto flex min-h-screen max-w-[1024px] flex-col items-start justify-start gap-5 px-2 py-5 transition-all  sm:justify-center sm:gap-10 sm:py-20"
     >
-      <article className="flex flex-col gap-1 w-full">
-        <h2 className="text-2xl font-bold text-[#42446E] dark:text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-600 to-purple-500 sm:text-4xl transition-all ">
+      <article className="flex w-full flex-col gap-1">
+        <h2 className="bg-gradient-to-r from-blue-500 via-purple-600 to-purple-500 bg-clip-text text-2xl font-bold text-[#42446E] transition-all dark:text-transparent sm:text-4xl ">
           {t("aboutTitle1")}
         </h2>
         <p
@@ -23,14 +23,14 @@ const About = () => {
         <p
           data-aos="fade-right"
           data-aos-once="true"
-          className="text-sm sm:text-xl mt-6"
+          className="mt-6 text-sm sm:text-xl"
         >
           {t("aboutParagraph2")}
         </p>
       </article>
 
-      <article className="flex flex-col gap-1 w-full">
-        <h2 className="text-2xl font-bold text-[#42446E] dark:text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 sm:text-4xl transition-all">
+      <article className="flex w-full flex-col gap-1">
+        <h2 className="bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 bg-clip-text text-2xl font-bold text-[#42446E] transition-all dark:text-transparent sm:text-4xl">
           {t("aboutTitle2")}
         </h2>
 

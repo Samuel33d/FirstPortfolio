@@ -1,6 +1,6 @@
 const TechUnit = ({ image, skill }) => {
   return (
-    <article className="hover:-translate-y-4 duration-700">
+    <article className="duration-700 hover:-translate-y-4">
       {" "}
       <img
         data-aos="zoom-in"

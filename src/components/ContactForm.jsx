@@ -36,45 +36,45 @@ const ContactForm = () => {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
   };
 
   return (
     <form
-      className="w-full max-w-[600px] my-10 [&>label]:grid [&>label]:gap-5 [&>label]:text-xl  dark:bg-[#363535] shadow-2xl border-2 dark:border-[#363535]  p-5 sm:p-10 rounded-lg grid gap-5 sm:gap-7 transition-all"
+      className="  my-10 grid w-full max-w-[600px] gap-5 rounded-lg border-2 border-black/10  bg-white p-5 shadow-2xl transition-all  dark:border-[#363535] dark:bg-[#363535] sm:gap-7 sm:p-10 [&>label]:grid [&>label]:gap-5 [&>label]:text-xl"
       onSubmit={handleSubmit}
     >
-      <label className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500  to-purple-500 font-bold  ">
+      <label className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text  font-bold text-transparent  ">
         {t("contactName")}
         <input
-          className="font-medium text-black dark:text-gray-300 text-sm bg-transparent outline-none border-b border-b-black dark:border-b-white  py-1"
+          className="border-b border-b-black bg-transparent py-1 text-sm font-medium text-black outline-none dark:border-b-white  dark:text-gray-300"
           type="text"
           name="user_name"
           required
         />
       </label>
-      <label className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 font-bold   ">
+      <label className="bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 bg-clip-text font-bold text-transparent   ">
         Email:
         <input
-          className="font-medium text-black dark:text-gray-300 text-sm bg-transparent outline-none border-b border-b-black dark:border-b-white  py-1"
+          className="border-b border-b-black bg-transparent py-1 text-sm font-medium text-black outline-none dark:border-b-white  dark:text-gray-300"
           type="email"
           name="user_email"
           required
         />
       </label>
       <label>
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 font-bold">
+        <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 bg-clip-text font-bold text-transparent">
           {t("contactMessage")}
         </span>
         <textarea
-          className="textarea font-medium text-black dark:text-gray-300 text-sm bg-transparent outline-none border-b border-b-black dark:border-b-white  py-1"
+          className="textarea border-b border-b-black bg-transparent py-1 text-sm font-medium text-black outline-none dark:border-b-white  dark:text-gray-300"
           name="message"
           required
         />
       </label>
       <input
-        className="font-bold px-8 py-1 sm:px-1 sm:py-1 sm:w-[40%] my-3 mx-auto rounded-full uppercase bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 cursor-pointer hover:tracking-wider transition-all text-black dark:text-white "
+        className="mx-auto my-3 cursor-pointer rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-purple-500 px-8 py-1 font-bold uppercase text-black transition-all hover:tracking-wider dark:text-white sm:w-[40%] sm:px-1 sm:py-1 "
         type="submit"
         value={t("contactBtn")}
       />

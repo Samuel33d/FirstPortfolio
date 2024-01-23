@@ -9,14 +9,14 @@ import TechStack from "./sections/TechStack";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(
-    JSON.parse(window.localStorage.getItem("theme"))
+    JSON.parse(window.localStorage.getItem("theme")),
   );
 
   return (
     <main
       className={` ${
-        isDarkMode ? "dark bg-[#191919] text-white" : "bg-white"
-      } min-h-screen  px-2 overflow-hidden transition-all`}
+        isDarkMode ? "dark bg-[#191919] text-white" : " bg-white/40"
+      } min-h-screen overflow-hidden bg-white/5  px-2 transition-all`}
     >
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Home />
