@@ -9,6 +9,7 @@ const Projects = () => {
   return (
     <GlowCapture>
       <Glow>
+        
         <section
           id="projects"
           className="mx-auto flex  min-h-screen max-w-[1024px] flex-col justify-center py-1 text-center sm:py-20"
