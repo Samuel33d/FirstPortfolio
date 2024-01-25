@@ -6,6 +6,7 @@ import Home from "./sections/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./sections/Projects";
 import TechStack from "./sections/TechStack";
+import WhaMeBtn from "./components/WhaMeBtn";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(
@@ -15,9 +16,10 @@ function App() {
   return (
     <main
       className={` ${
-        isDarkMode ? "dark bg-[#191919] text-white" : " bg-white/40"
-      } min-h-screen overflow-hidden   px-2 transition-all`}
+        isDarkMode ? "dark bg-[#191919] text-white" : " bg-[#F3F8FF]"
+      }  min-h-screen   overflow-hidden px-2 transition-all`}
     >
+      <WhaMeBtn />
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Home />
       <About />

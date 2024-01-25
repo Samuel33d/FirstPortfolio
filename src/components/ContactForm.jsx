@@ -42,7 +42,7 @@ const ContactForm = () => {
 
   return (
     <form
-      className="  my-10 grid w-full max-w-[600px] gap-5 rounded-lg border-2 border-black/10  bg-white p-5 shadow-2xl transition-all  dark:border-[#363535] dark:bg-[#363535] sm:gap-7 sm:p-10 [&>label]:grid [&>label]:gap-5 [&>label]:text-xl"
+      className="  my-10 grid w-full max-w-[600px] gap-5 rounded-lg border-2 border-black/10  bg-[#F3F8FF]  p-5 shadow-2xl transition-all  dark:border-[#363535] dark:bg-[#363535] sm:gap-7 sm:p-10 [&>label]:grid [&>label]:gap-5 [&>label]:text-xl"
       onSubmit={handleSubmit}
     >
       <label className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text  font-bold text-transparent  ">

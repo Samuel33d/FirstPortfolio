@@ -133,7 +133,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       <div
         className={`${
           scroll > 0 && "shadow-lg"
-        }  fixed z-30 hidden w-full max-w-[1024px] items-center justify-end gap-5 bg-white p-5 transition-all dark:bg-[#191919] sm:flex`}
+        }  fixed z-30 hidden w-full max-w-[1024px] items-center justify-end gap-5 rounded-lg bg-[#F3F8FF] p-5 transition-all dark:bg-[#191919] sm:flex`}
       >
         <Link
           to="home"
@@ -206,7 +206,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           <div
             className={`${
               isModalShow ? "opacity-100 " : "opacity-0 "
-            } absolute right-0 mt-2 grid w-20 cursor-default gap-2 rounded-lg border  border-black bg-white p-1 text-sm transition-all dark:border-white dark:bg-[#363535]`}
+            } absolute right-0 mt-2 grid w-20 cursor-default gap-2 rounded-lg border  border-black bg-[#F3F8FF] p-1 text-sm transition-all dark:border-white dark:bg-[#363535]`}
           >
             <button
               disabled={isEnglish}

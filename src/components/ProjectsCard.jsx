@@ -8,7 +8,7 @@ const ProjectsCard = ({ project, index }) => {
     <article
       data-aos="zoom-in"
       data-aos-once="true"
-      className={`${index % 2 ? "glow:bg-blue-500/20 glow:border-blue-500/20" : "glow:bg-purple-500/20 glow:border-purple-500/20"} g my-3 h-[387.95px] w-[290px] overflow-hidden rounded-lg border-2 border-black/10 bg-white  text-left shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:scale-105 dark:border-[#363535] dark:bg-[#363535] sm:w-[300px]`}
+      className={`${index % 2 ? "glow:border-blue-500/20 glow:bg-blue-500/20" : "glow:border-purple-500/20 glow:bg-purple-500/20"} g relative my-3 h-[387.95px] w-[290px] overflow-hidden rounded-lg border-2 border-black/10  bg-[#F3F8FF] text-left shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:scale-105 dark:border-[#363535] dark:bg-[#363535] sm:w-[300px]`}
     >
       <header className="h-26 relative">
         <img src={project.projectImg} alt="" />
@@ -41,9 +41,9 @@ const ProjectsCard = ({ project, index }) => {
           </span>
         </span>
       </section>
-      <footer className="mt-1 flex items-center justify-end gap-3 px-6 pb-3">
+      <footer className="absolute bottom-0 right-0 mt-1 flex items-center justify-end gap-3 px-6 pb-3">
         <a
-          className={` ${index % 2 ? "glow:text-blue-500" : "glow:text-purple-500"} flex h-7 w-7 items-center justify-center transition-all`}
+          className={` ${index % 2 ? "glow:text-blue-500/60" : "glow:text-purple-500/60"} flex h-7 w-7 items-center justify-center transition-all`}
           href={project.siteLink}
           target="_blank"
           rel="noopener noreferrer"
@@ -51,7 +51,7 @@ const ProjectsCard = ({ project, index }) => {
           <IconLink />
         </a>
         <a
-          className={`${index % 2 ? "glow:bg-blue-500" : "glow:bg-purple-500"} relative h-7 w-7  rounded-full bg-[#191919] p-[2px] transition-all dark:bg-white ${
+          className={`${index % 2 ? "glow:bg-blue-500/60" : "glow:bg-purple-500/60"} relative h-7 w-7  rounded-full bg-[#191919] p-[2px] transition-all dark:bg-white ${
             project.githubLink === undefined ? "hidden" : "block"
           }`}
           href={project.githubLink}

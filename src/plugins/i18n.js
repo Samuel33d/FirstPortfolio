@@ -39,6 +39,8 @@ const translationEN = {
     "contactName": "Name:",
     "contactMessage": "Message:",
     "contactBtn": "send",
+    "whaStatus": "Online",
+    "whaMessage": "Message"
 }
 
 const translationES = {
@@ -78,7 +80,8 @@ const translationES = {
     "contactName": "Name:",
     "contactMessage": "Message:",
     "contactBtn": "enviar",
-
+    "whaStatus": "En línea",
+    "whaMessage": "Mensaje"
 }
 
 

@@ -5,7 +5,7 @@ const EducationCard = ({ title, institute, date, time }) => {
     <article
       data-aos="fade-right"
       data-aos-once="true"
-      className="flex flex-col gap-3 pb-6 transition-all sm:gap-5 sm:py-6   md:grid md:grid-cols-[auto,auto]"
+      className="flex flex-col gap-3 pb-6 transition-all sm:gap-5 sm:py-6 md:grid md:grid-cols-[auto,auto]"
     >
       <div>
         <h3 className="text-md sm:text-xl">{title}</h3>
